@@ -1,0 +1,9 @@
+annotations:
+  created: "2025-07-25T05:16:34Z"
+  revision: 24d51e8ff3f6df032f30afd349bbe173c3117ad2
+apiVersion: v2
+appVersion: 1.0.12-dev
+description: Deploy the Edge-Native Software Platform Infrastructure pod
+name: orch-ui-infra
+type: application
+version: 1.0.12-dev

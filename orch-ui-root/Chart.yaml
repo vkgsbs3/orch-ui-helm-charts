@@ -1,0 +1,9 @@
+annotations:
+  created: "2025-07-25T05:16:36Z"
+  revision: 24d51e8ff3f6df032f30afd349bbe173c3117ad2
+apiVersion: v2
+appVersion: 2.0.12-dev
+description: Deploy MX Grid Manager UI pods on Kubernetes
+name: orch-ui-root
+type: application
+version: 2.0.12-dev
