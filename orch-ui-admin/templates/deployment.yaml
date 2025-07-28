@@ -38,7 +38,7 @@ spec:
       {{- end }}
       containers:
         - name: admin
-          image: "{{- if hasKey $registry "name" }}{{ $registry.name }}/{{- end -}}{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          image: sandbox-docker-candidates.repo.cci.nokia.net/edge-orch/orch-ui/admin:2.0.12-dev
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http

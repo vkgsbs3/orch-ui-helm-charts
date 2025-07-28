@@ -38,7 +38,7 @@ spec:
       {{- end }}
       containers:
         - name: cluster-orch
-          image: "{{- if hasKey $registry "name" }}{{ $registry.name }}/{{- end -}}{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          image: sandbox-docker-candidates.repo.cci.nokia.net/edge-orch/orch-ui/cluster-orch:2.0.16-dev
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http

@@ -38,8 +38,7 @@ spec:
       {{- end }}
       containers:
         - name: infra
-          image: "{{- if hasKey $registry "name" }}{{ $registry.name }}/{{- end -}}{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
-
+          image: sandbox-docker-inprogress.repo.cci.nokia.net/edge-orch/orch-ui/infra:1.0.12-dev
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
